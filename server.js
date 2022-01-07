@@ -1,0 +1,44 @@
+// dependencies
+const path = require('path');
+const express = require('express');
+const session = require('express-session');
+const exphbs = require('express-handlebars');
+
+
+const sequelize = require('./config/connection');
+// Import the custom helper methods
+const helpers = require('./utils/helpers'); //this code doesn't exist yet so leave him coded out for now
+
+const app = express();
+const PORT = process.env.PORT || 3001;
+
+
+// Set up sessions with cookies
+const sess = {
+  secret: process.env.SESSION_SECRET,
+  cookie: {
+    maxAge: 864000000,
+  },
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize,
+  }),
+};
+
+app.use(session(sess));
+
+const hbs = exphbs.create({}); //this tells it to go to layout/main - automatically
+
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
+
+app.use(express.json({ limit: "50mb" }));
+app.use(express.urlencoded({ extended: true, limit: "50mb" }));
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(require('./controllers/'));
+
+sequelize.sync({ force: false }).then(() => { 
+  app.listen(PORT, () => console.log('Now listening'));
+});

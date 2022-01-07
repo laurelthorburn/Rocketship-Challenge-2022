@@ -1,0 +1,22 @@
+{
+  "name": "rocketship-challenge-2022",
+  "version": "1.0.0",
+  "description": "Coming soon...Stay tuned for some exciting code!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laurelthorburn/Rocketship-Challenge-2022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laurelthorburn/Rocketship-Challenge-2022/issues"
+  },
+  "homepage": "https://github.com/laurelthorburn/Rocketship-Challenge-2022#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}

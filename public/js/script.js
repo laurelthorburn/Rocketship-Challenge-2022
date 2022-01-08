@@ -41,24 +41,28 @@ function displayNasaCards(cardData){
 console.log("Test 2",
 cardData) //works
 
-// cardData.forEach(nasaData, i => {
-    imageCards.innerHTML =     `<div class="col-lg-6 mb-4">
+console.log(cardData.length) //undefined
+
+for (let i = 0; i < cardData.length; i++) {
+
+console.log("hi");
+    imageCards.innerHTML =     
+    `<div class="col-lg-6 mb-4">
 
     <div class="card">
-        <img class="card-img-top" src="${cardData[0].url}" alt="${cardData[0].title}">
+        <img class="card-img-top" src="${cardData[i].url}" alt="${cardData[i].title}">
     
         <div class="card-body">
-            <h5 class="card-title">${cardData[0].title} || ${cardData[0].date} <a href="${cardData[0].url}" class="btn btn-outline-secondary btn-sm">
+            <h5 class="card-title">${cardData[i].title} || ${cardData[i].date} <a href="${cardData[i].url}" class="btn btn-outline-secondary btn-sm">
             <i class="far fa-heart"></i></a></h5>
-            <p>${cardData[0].explanation}</p>
-            <a href="${cardData[0].url}" class="btn btn-outline-primary btn-block">
+            <p>${cardData[i].explanation}</p>
+            <a href="${cardData[i].url}" class="btn btn-outline-primary btn-block">
                 Learn More...
             </a>
         </div>
     </div>
     </div>`
-
-// });
+}
 
 
 };

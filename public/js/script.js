@@ -37,8 +37,12 @@ for (let i = 0; i < nasaArray.length; i++) {
     <a href="${cardData[i].url}" target="_blank"><img class="card-img-top" src="${cardData[i].url}" alt="${cardData[i].title}"></a>
     
         <div class="card-body">
-            <h5 class="card-title">${cardData[i].title} <a href="${cardData[i].url}" class="btn btn-outline-secondary btn-sm">
-            <i class="far fa-heart"></i></a></h5>
+            <h5 class="card-title">
+            ${cardData[i].title} 
+            
+            <i onclick="myFunction(this)" class=" fa fa-thumbs-o-up"></i>
+            
+            </h5>
             <h4>${formatDate(new Date(cardData[i].date))}</h4>
 
             <button type="button" class="collapsible">Learn More...</button>
@@ -77,13 +81,20 @@ function expandContent(){
         }
     });
     }
+
 };
 
+function myFunction(x) {
+
+    // x.addClass('fa-heart');
+    // x.removeClass('fa-heart-o');
+    x.classList.toggle("fa-thumbs-up");
+  }
+
 //TODO: Format cards - two cards per row as default, break after two cards - can i do this within one loop?
-//TODO: Create link on img to make image larger
 //TODO: Create like button
 //TODO: CSS Styling (h4, explanation, button
-// TODO: aboutLaurel page
+// TODO: aboutLaurel page with back to main page button
 
 
 

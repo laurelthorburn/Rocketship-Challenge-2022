@@ -41,28 +41,88 @@ function displayNasaCards(cardData){
 console.log("Test 2",
 cardData) //works
 
-console.log(cardData.length) //undefined
+// console.log(cardData.length) //undefined
 
-for (let i = 0; i < cardData.length; i++) {
+// for (let i = 0; i < cardData.length; i++) {
 
-console.log("hi");
-    imageCards.innerHTML =     
-    `<div class="col-lg-6 mb-4">
+// console.log("hi");
+    imageCards.innerHTML =   
+    `<div class="container">
+    <div class="row">  
+    <div class="col-lg-6 mb-4">
 
     <div class="card">
-        <img class="card-img-top" src="${cardData[i].url}" alt="${cardData[i].title}">
+        <img class="card-img-top" src="${cardData[0].url}" alt="${cardData[0].title}">
     
         <div class="card-body">
-            <h5 class="card-title">${cardData[i].title} || ${cardData[i].date} <a href="${cardData[i].url}" class="btn btn-outline-secondary btn-sm">
+            <h5 class="card-title">${cardData[0].title} || ${cardData[0].date} <a href="${cardData[0].url}" class="btn btn-outline-secondary btn-sm">
             <i class="far fa-heart"></i></a></h5>
-            <p>${cardData[i].explanation}</p>
-            <a href="${cardData[i].url}" class="btn btn-outline-primary btn-block">
+            <p>${cardData[0].explanation}</p>
+            <a href="${cardData[0].url}" class="btn btn-outline-primary btn-block">
                 Learn More...
             </a>
         </div>
     </div>
-    </div>`
-}
+    </div>
+    <div class="col-lg-6 mb-4">
+
+    <div class="card">
+        <img class="card-img-top" src="${cardData[1].url}" alt="${cardData[1].title}">
+    
+        <div class="card-body">
+            <h5 class="card-title">${cardData[1].title} || ${cardData[1].date} <a href="${cardData[1].url}" class="btn btn-outline-secondary btn-sm">
+            <i class="far fa-heart"></i></a></h5>
+            <p>${cardData[1].explanation}</p>
+            <a href="${cardData[1].url}" class="btn btn-outline-primary btn-block">
+                Learn More...
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+    <div class="row">
+    
+    <div class="col-lg-6 mb-4">
+    <div class="card">
+        <img class="card-img-top" src="${cardData[2].url}" alt="${cardData[2].title}">
+    
+        <div class="card-body">
+            <h5 class="card-title">${cardData[2].title} || ${cardData[2].date} <a href="${cardData[2].url}" class="btn btn-outline-secondary btn-sm">
+            <i class="far fa-heart"></i></a></h5>
+            <p>${cardData[2].explanation}</p>
+            <a href="${cardData[2].url}" class="btn btn-outline-primary btn-block">
+                Learn More...
+            </a>
+        </div>
+    </div>
+    </div>
+
+
+  
+    
+
+    <div class="col-lg-6 mb-4">
+    <div class="card">
+        <img class="card-img-top" src="${cardData[3].url}" alt="${cardData[3].title}">
+    
+        <div class="card-body">
+            <h5 class="card-title">${cardData[3].title} || ${cardData[3].date} <a href="${cardData[3].url}" class="btn btn-outline-secondary btn-sm">
+            <i class="far fa-heart"></i></a></h5>
+            <p>${cardData[3].explanation}</p>
+            <a href="${cardData[3].url}" class="btn btn-outline-primary btn-block">
+                Learn More...
+            </a>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+  
+    
+    `
+// }
 
 
 };

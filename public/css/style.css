@@ -4,3 +4,7 @@ html, body {
     height: 100%;
     background-color: #FAFAFA;
 }
+
+h5 {
+    font-family: 'PT Sans', sans-serif;
+}

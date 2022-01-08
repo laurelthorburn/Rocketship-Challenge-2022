@@ -1,12 +1,22 @@
 console.log("Coming soon... 🚀")
 
-// require('dotenv').config(); //do i need the config?
+// const apiKEY = "IIynkiUi3iVEppyNc1Q0pAEfUURrR0FGy9T7OGaE";
 
-// //create global variables
-// const apiKey = process.env.API_KEY;
-const baseURL =;
+const baseURL = `https://api.nasa.gov/planetary/apod?api_key=IIynkiUi3iVEppyNc1Q0pAEfUURrR0FGy9T7OGaE&count=4`;
 
-console.log(baseURL)
+console.log(baseURL);
+
+getNASA();
+
+//creating fetch and converting data to json
+function getNASA(){
+    fetch(baseURL)
+    .then(res =>res.json)
+    .then(data => {
+        console.log(data)
+    })
+}
+
 
 
 // {

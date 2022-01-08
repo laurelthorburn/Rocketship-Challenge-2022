@@ -42,7 +42,9 @@ function displayNasaCards(cardData){
 
 console.log(cardData.length) //undefined
 
-const nasaArray = OObject.getOwnPropertyNames(cardData);
+//
+
+const nasaArray = Object.getOwnPropertyNames(cardData);
 
 for (let i = 0; i < nasaArray.length; i++) {
 console.log("loop check");

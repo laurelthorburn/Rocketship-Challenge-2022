@@ -5,8 +5,13 @@ html, body {
     background-color: #FAFAFA;
 }
 
-h5 {
+h5,
+h4 {
     font-family: 'PT Sans', sans-serif;
+}
+
+h4{
+    font-size: 1rem;
 }
 
 /* Style the button that is used to open and close the collapsible content */
@@ -33,6 +38,7 @@ h5 {
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
+    width:auto;
   }
 
   

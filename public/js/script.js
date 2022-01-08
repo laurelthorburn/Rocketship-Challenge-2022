@@ -32,7 +32,7 @@ const nasaArray = Object.getOwnPropertyNames(cardData);
 for (let i = 0; i < nasaArray.length; i++) {
 // console.log("loop check"); //works
     imageCards.innerHTML +=     
-    `<div class="col-lg-6 mb-3">
+    `<div class="col-lg-6 mb-4 mx-auto">
     <div class="card">
     <a href="${cardData[i].url}" target="_blank"><img class="card-img-top" src="${cardData[i].url}" alt="${cardData[i].title}"></a>
     
@@ -81,18 +81,16 @@ function expandContent(){
         }
     });
     }
-
 };
 
 function toggleLike(like) {
-
     like.classList.toggle("fa-thumbs-up");
   }
 
 //TODO: Format cards - two cards per row as default, break after two cards - can i do this within one loop?
-//TODO: Create like button
 //TODO: CSS Styling (h4, explanation, button
 // TODO: aboutLaurel page with back to main page button
+//TODO: if img is actually a video, what to do...
 
 
 

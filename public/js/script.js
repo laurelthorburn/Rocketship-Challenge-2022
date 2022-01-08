@@ -34,7 +34,7 @@ for (let i = 0; i < nasaArray.length; i++) {
     imageCards.innerHTML +=     
     `<div class="col-lg-6 mb-3">
     <div class="card">
-        <img class="card-img-top" src="${cardData[i].url}" alt="${cardData[i].title}">
+    <a href="${cardData[i].url}" target="_blank"><img class="card-img-top" src="${cardData[i].url}" alt="${cardData[i].title}"></a>
     
         <div class="card-body">
             <h5 class="card-title">${cardData[i].title} <a href="${cardData[i].url}" class="btn btn-outline-secondary btn-sm">
@@ -46,11 +46,6 @@ for (let i = 0; i < nasaArray.length; i++) {
             <p>${cardData[i].explanation}</p>
             </div>
 
-
-
-            <a href="${cardData[i].url}" class="btn btn-outline-primary btn-block">
-                Expand
-            </a>
         </div>
     </div>
     </div>`
@@ -59,11 +54,11 @@ expandContent();
 };
 
 function formatDate(date){
-        return date.toLocaleDateString(
-              undefined,
-              {day: 'numeric', month: 'long', year: 'numeric'}
-        );
-      };
+    return date.toLocaleDateString(
+        undefined,
+        {day: 'numeric', month: 'long', year: 'numeric'}
+    );
+};
       
     //   console.log(formatDate(new Date())); //works
 
@@ -85,7 +80,6 @@ function expandContent(){
 };
 
 //TODO: Format cards - two cards per row as default, break after two cards - can i do this within one loop?
-//TODO: Create expand feature for explanation
 //TODO: Create link on img to make image larger
 //TODO: Create like button
 //TODO: CSS Styling (h4, explanation, button

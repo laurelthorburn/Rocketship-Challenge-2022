@@ -1,4 +1,4 @@
-console.log("Coming soon... 🚀")
+console.log("Support Laurel launch her dream career... 🚀")
 
 // const apiKEY = "IIynkiUi3iVEppyNc1Q0pAEfUURrR0FGy9T7OGaE";
 
@@ -20,16 +20,6 @@ function getNASA(){
         } = data;
         // console.log("Test 1",
         // nasaData); //works
-// Object.entries(nasaData).map(([key, data]) => //do i need the key?
-//         {
-//             return {
-//                 key,
-//                 date: data.date,
-//                 explanation: data.explanation,
-//                 title: data.title,
-//                 url: data.url
-//             }
-//         }) //loop through an object
         displayNasaCards(nasaData);
     })
 
@@ -40,9 +30,7 @@ function displayNasaCards(cardData){
 // console.log("Test 2",
 // cardData) //works
 
-console.log(cardData.length) //undefined
-
-//
+// console.log(cardData.length) //undefined
 
 const nasaArray = Object.getOwnPropertyNames(cardData);
 
@@ -50,9 +38,7 @@ for (let i = 0; i < nasaArray.length; i++) {
 console.log("loop check");
 
     imageCards.innerHTML +=     
-    `
-    
-    <div class="col-lg-6 mb-4">
+    `<div class="col-lg-6 mb-4">
 
     <div class="card">
         <img class="card-img-top" src="${cardData[i].url}" alt="${cardData[i].title}">
@@ -62,7 +48,7 @@ console.log("loop check");
             <i class="far fa-heart"></i></a></h5>
             <p>${cardData[i].explanation}</p>
             <a href="${cardData[i].url}" class="btn btn-outline-primary btn-block">
-                Learn More...
+                Expand
             </a>
         </div>
     </div>
@@ -73,12 +59,9 @@ console.log("loop check");
 };
 
 //TODO: Format Date
+//TODO: Format cards
+//TODO: Create expand feature for explanation
+//TODO: Create link on img to make image larger
 
 
-// date: "2021-04-04"
-// explanation: "Four moons are visible on the featured image -- can you find them all? First -- and farthest in the background -- is Titan, the largest moon of Saturn and one of the larger moons in the Solar System.  The dark feature across the top of this perpetually cloudy world is the north polar hood. The next most obvious moon is bright Dione, visible in the foreground, complete with craters and long ice cliffs. Jutting in from the left are several of Saturn's expansive rings, including Saturn's A ring featuring the dark Encke Gap. On the far right, just outside the rings, is Pandora, a moon only 80-kilometers across that helps shepherd Saturn's F ring. The fourth moon?  If you look closely inside Saturn's rings, in the Encke Gap, you will find a speck that is actually Pan. Although one of Saturn's smallest moons at 35-kilometers across, Pan is massive enough to help keep the Encke gap relatively free of ring particles. After more than a decade of exploration and discovery, the Cassini spacecraft ran low on fuel in 2017 and was directed to enter Saturn's atmosphere, where it surely melted."
-// hdurl: "https://apod.nasa.gov/apod/image/2104/fourmoons_cassini_960.jpg"
-// media_type: "image"
-// service_version: "v1"
-// title: "In, Through, and Beyond Saturn's Rings"
-// url: "https://apod.nasa.gov/apod/image/2104/fourmoons_cassini_960.jpg"
+

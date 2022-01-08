@@ -18,14 +18,14 @@ function getNASA(){
         const {
             ...nasaData //use spread operator to later map
         } = data;
-        console.log("Test 1",
-        nasaData); //works
+        // console.log("Test 1",
+        // nasaData); //works
 Object.entries(nasaData).map(([key, data]) => //do i need the key?
         {
             return {
                 key,
                 date: data.date,
-                content: data.explanation,
+                explanation: data.explanation,
                 title: data.title,
                 url: data.url
             }
@@ -39,23 +39,24 @@ Object.entries(nasaData).map(([key, data]) => //do i need the key?
 //rendering cards on page
 function displayNasaCards(cardData){
 console.log("Test 2",
-cardData)
-// array.forEach(nasaData, i => {
-//     imageCards.innerHTML =     `<div class="col-lg-6 mb-4">
+cardData) //works
 
-//     <div class="card">
-//         <img class="card-img-top" src="${[i].url}" alt="${[i].title}">
+// cardData.forEach(nasaData, i => {
+    imageCards.innerHTML =     `<div class="col-lg-6 mb-4">
+
+    <div class="card">
+        <img class="card-img-top" src="${cardData[0].url}" alt="${cardData[0].title}">
     
-//         <div class="card-body">
-//             <h5 class="card-title">${[i].title} || ${[i].date} <a href="${[i].url}" class="btn btn-outline-secondary btn-sm">
-//             <i class="far fa-heart"></i></a></h5>
-//             <p>${[i].content}</p>
-//             <a href="${[i].url}" class="btn btn-outline-primary btn-block">
-//                 Learn More...
-//             </a>
-//         </div>
-//     </div>
-//     </div>`
+        <div class="card-body">
+            <h5 class="card-title">${cardData[0].title} || ${cardData[0].date} <a href="${cardData[0].url}" class="btn btn-outline-secondary btn-sm">
+            <i class="far fa-heart"></i></a></h5>
+            <p>${cardData[0].explanation}</p>
+            <a href="${cardData[0].url}" class="btn btn-outline-primary btn-block">
+                Learn More...
+            </a>
+        </div>
+    </div>
+    </div>`
 
 // });
 

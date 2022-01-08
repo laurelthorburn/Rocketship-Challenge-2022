@@ -23,18 +23,23 @@ function getNASA(){
 
 //rendering cards on page
 function displayNasaCards(cardData){
-// console.log("Test 2",
-// cardData) //works
+console.log("Test 2",
+cardData) //works
 
 // console.log(cardData.length) //undefined
 const nasaArray = Object.getOwnPropertyNames(cardData);
 
 for (let i = 0; i < nasaArray.length; i++) {
 // console.log("loop check"); //works
+
+//check to see media_type
+//     <img class="card-img-top" src="${cardData[i].url}" alt="${cardData[i].title}">
     imageCards.innerHTML +=     
-    `<div class="col-lg-6 mb-4 mx-auto">
+    `<div class="col-lg-6 mb-6 mx-auto">
     <div class="card">
-    <a href="${cardData[i].url}" target="_blank"><img class="card-img-top" src="${cardData[i].url}" alt="${cardData[i].title}"></a>
+    <a href="${cardData[i].url}" target="_blank">
+    ${checkMedia(cardData[i].media_type, cardData[i].url, cardData[i].title)}
+    </a>
     
         <div class="card-body">
             <h5 class="card-title">
@@ -86,11 +91,18 @@ function expandContent(){
 function toggleLike(like) {
     like.classList.toggle("fa-thumbs-up");
   }
+  
+//refractor else clause 
+  function checkMedia(type, url, title){
+      if (type !== 'image'){
+          return `<img class="card-img-top" src="./media/youtube_play.png" alt="${title}"></img>`
+      }
+        return `<img class="card-img-top" src="${url}" alt="${title}"></img>`
+  }
 
 //TODO: Format cards - two cards per row as default, break after two cards - can i do this within one loop?
 //TODO: CSS Styling (h4, explanation, button
 // TODO: aboutLaurel page with back to main page button
-//TODO: if img is actually a video, what to do...
+//TODO: if img is actually a video, what to do... (if media_type !== "image") can i set the image source to a play video.. or skip...
 
-
-
+//TODO: research axios, app hosted heroku, button front end does fetch to server

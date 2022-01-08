@@ -40,7 +40,7 @@ for (let i = 0; i < nasaArray.length; i++) {
             <h5 class="card-title">
             ${cardData[i].title} 
             
-            <i onclick="myFunction(this)" class=" fa fa-thumbs-o-up"></i>
+            <i onclick="toggleLike(this)" class=" fa fa-thumbs-o-up"></i>
             
             </h5>
             <h4>${formatDate(new Date(cardData[i].date))}</h4>
@@ -84,11 +84,9 @@ function expandContent(){
 
 };
 
-function myFunction(x) {
+function toggleLike(like) {
 
-    // x.addClass('fa-heart');
-    // x.removeClass('fa-heart-o');
-    x.classList.toggle("fa-thumbs-up");
+    like.classList.toggle("fa-thumbs-up");
   }
 
 //TODO: Format cards - two cards per row as default, break after two cards - can i do this within one loop?

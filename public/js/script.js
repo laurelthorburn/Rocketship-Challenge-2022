@@ -37,9 +37,17 @@ for (let i = 0; i < nasaArray.length; i++) {
         <img class="card-img-top" src="${cardData[i].url}" alt="${cardData[i].title}">
     
         <div class="card-body">
-            <h5 class="card-title">${cardData[i].title} || ${formatDate(new Date(cardData[i].date))} <a href="${cardData[i].url}" class="btn btn-outline-secondary btn-sm">
+            <h5 class="card-title">${cardData[i].title} <a href="${cardData[i].url}" class="btn btn-outline-secondary btn-sm">
             <i class="far fa-heart"></i></a></h5>
+            <h4>${formatDate(new Date(cardData[i].date))}</h4>
+
+            <button type="button" class="collapsible">Learn More...</button>
+            <div class="content">
             <p>${cardData[i].explanation}</p>
+            </div>
+
+
+
             <a href="${cardData[i].url}" class="btn btn-outline-primary btn-block">
                 Expand
             </a>
@@ -47,6 +55,7 @@ for (let i = 0; i < nasaArray.length; i++) {
     </div>
     </div>`
 }
+expandContent();
 };
 
 function formatDate(date){
@@ -56,12 +65,31 @@ function formatDate(date){
         );
       };
       
-      console.log(formatDate(new Date()));
+    //   console.log(formatDate(new Date())); //works
 
-//TODO: Format Date
+function expandContent(){
+    const coll = document.getElementsByClassName("collapsible");
+    let index;
+
+    for (index = 0; index < coll.length; index++) {
+    coll[index].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+        content.style.display = "none";
+        } else {
+        content.style.display = "block";
+        }
+    });
+    }
+};
+
 //TODO: Format cards - two cards per row as default, break after two cards - can i do this within one loop?
 //TODO: Create expand feature for explanation
 //TODO: Create link on img to make image larger
+//TODO: Create like button
+//TODO: CSS Styling (h4, explanation, button
+// TODO: aboutLaurel page
 
 
 

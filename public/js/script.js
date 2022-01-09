@@ -113,16 +113,15 @@ function reloadBtn(){
 }
 
 
-//   const reloadPage = () => {
-// // console.log('you clicked the btn, nice job') //works
-//     window.location.reload();
-//   };
+  const reloadPage = () => {
+// console.log('you clicked the btn, nice job') //works
+    window.location.reload();
+  };
 
-//   renderBtn.addEventListener('click', reloadPage);
+  renderBtn.addEventListener('click', reloadPage);
 
 //TODO: Format cards - two cards per row as default, break after two cards - can i do this within one loop?
 //TODO: CSS Styling (h4, explanation, button
 // TODO: aboutLaurel page with back to main page button
 
 //TODO: research axios, app hosted heroku, button front end does fetch to server
-//TODO: Don't let button load until page loads

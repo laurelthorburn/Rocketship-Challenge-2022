@@ -35,7 +35,7 @@ for (let i = 0; i < nasaArray.length; i++) {
 //check to see media_type
 //     <img class="card-img-top" src="${cardData[i].url}" alt="${cardData[i].title}">
     imageCards.innerHTML +=     
-    `<div class="col-lg-6 mb-6 mx-auto">
+    `<div class="col-lg-6 mb-6 mx-auto min-width">
     <div class="card">
     <a href="${cardData[i].url}" target="_blank">
     ${checkMedia(cardData[i].media_type, cardData[i].url, cardData[i].title)}

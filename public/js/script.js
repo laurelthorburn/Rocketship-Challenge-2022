@@ -63,6 +63,8 @@ for (let i = 0; i < nasaArray.length; i++) {
     </div>
     </div>`
 }
+
+removeLoader();
 expandContent();
 };
 
@@ -126,16 +128,16 @@ function reloadBtn(){
     window.location.reload();
   };
 
-  const removeLoader = () => {
+  function removeLoader() {
       const loader = document.querySelector(".loader");
       loader.className += " hidden";
   }
 
   renderBtn.addEventListener('click', reloadPage);
 
-  window.addEventListener("load", removeLoader);
 
-  
+
+
 //TODO: Format cards - two cards per row as default, break after two cards - can i do this within one loop?
 //TODO: CSS Styling (h4, explanation, button
 // TODO: aboutLaurel page with back to main page button

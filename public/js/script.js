@@ -1,8 +1,5 @@
 console.log("Support Laurel launch her dream career... 🚀");
 
-// const apiKEY = "IIynkiUi3iVEppyNc1Q0pAEfUURrR0FGy9T7OGaE";
-
-
 const baseURL = `https://api.nasa.gov/planetary/apod?api_key=IIynkiUi3iVEppyNc1Q0pAEfUURrR0FGy9T7OGaE&count=4`;
 const imageCards = document.querySelector('[data-nasa-card]');
 const renderBtn = document.querySelector('[data-reload-page]');
@@ -132,12 +129,3 @@ function reloadBtn(){
   }
 
   renderBtn.addEventListener('click', reloadPage);
-
-
-
-
-//TODO: Format cards - two cards per row as default, break after two cards - can i do this within one loop?
-//TODO: CSS Styling (h4, explanation, button
-// TODO: aboutLaurel page with back to main page button
-
-//TODO: research axios, app hosted heroku, button front end does fetch to server

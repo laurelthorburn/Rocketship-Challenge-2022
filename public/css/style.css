@@ -5,12 +5,16 @@ html, body {
     background-color: #FAFAFA;
 }
 
-h5,
-h4 {
+h1,
+h2 {
     font-family: 'PT Sans', sans-serif;
 }
 
-h4{
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
     font-size: 1rem;
 }
 
@@ -45,5 +49,9 @@ h4{
     min-width: 600px;
   }
   
-  
+  #render-more{
+    background-color: pink;
+    padding: 10px;
+    margin: 50px;
+  }
   

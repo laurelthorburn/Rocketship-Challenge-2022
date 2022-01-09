@@ -1,8 +1,11 @@
 console.log("Support Laurel launch her dream career... 🚀");
 
 // const apiKEY = "IIynkiUi3iVEppyNc1Q0pAEfUURrR0FGy9T7OGaE";
+
+
 const baseURL = `https://api.nasa.gov/planetary/apod?api_key=IIynkiUi3iVEppyNc1Q0pAEfUURrR0FGy9T7OGaE&count=4`;
 const imageCards = document.querySelector('[data-nasa-card]');
+const renderBtn = document.querySelector('[data-reload-page]');
 let nasaData;
 // console.log(baseURL); //works
 
@@ -18,6 +21,7 @@ function getNASA(){
         // console.log("Test 1",
         // nasaData); //works
         displayNasaCards(nasaData);
+        reloadBtn();
     })
 };
 
@@ -42,15 +46,15 @@ for (let i = 0; i < nasaArray.length; i++) {
     </a>
     
         <div class="card-body">
-            <h5 class="card-title">
+            <h1 class="card-title">
             ${cardData[i].title} 
             
             <i onclick="toggleLike(this)" class=" fa fa-thumbs-o-up"></i>
             
-            </h5>
-            <h4>${formatDate(new Date(cardData[i].date))}</h4>
+            </h1>
+            <h2>${formatDate(new Date(cardData[i].date))}</h2>
 
-            <button type="button" class="collapsible">Learn More...</button>
+            <button type="button" class="collapsible">Learn More <i class="fa fa-angle-down" aria-hidden="true"></i> </button>
             <div class="content">
             <p>${cardData[i].explanation}</p>
             </div>
@@ -100,9 +104,25 @@ function toggleLike(like) {
         return `<img class="card-img-top" src="${url}" alt="${title}"></img>`
   }
 
+
+function reloadBtn(){
+      console.log('Did this log on page load?')
+      renderBtn.innerHTML +=
+    `<button id="render-more">I want more <i class="fa fa-refresh" aria-hidden="true"></i>
+    </button> `
+}
+
+
+//   const reloadPage = () => {
+// // console.log('you clicked the btn, nice job') //works
+//     window.location.reload();
+//   };
+
+//   renderBtn.addEventListener('click', reloadPage);
+
 //TODO: Format cards - two cards per row as default, break after two cards - can i do this within one loop?
 //TODO: CSS Styling (h4, explanation, button
 // TODO: aboutLaurel page with back to main page button
-//TODO: if img is actually a video, what to do... (if media_type !== "image") can i set the image source to a play video.. or skip...
 
 //TODO: research axios, app hosted heroku, button front end does fetch to server
+//TODO: Don't let button load until page loads

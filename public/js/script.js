@@ -49,14 +49,14 @@ for (let i = 0; i < nasaArray.length; i++) {
             <h1 class="card-title">
             ${cardData[i].title} 
             
-            <i onclick="toggleLike(this)" class=" fa fa-thumbs-o-up"></i>
+            <i onclick="toggleLike(this)" class="fa fa-thumbs-o-up"></i>
             
             </h1>
             <h2>${formatDate(new Date(cardData[i].date))}</h2>
 
-            <button type="button" class="collapsible">Learn More <i class="fa fa-angle-down" aria-hidden="true"></i> </button>
-            <div class="content">
-            <p>${cardData[i].explanation}</p>
+            <button class="accordion">Learn More</button>
+            <div class="panel">
+              <p class="content-width">${cardData[i].explanation}</p>
             </div>
 
         </div>
@@ -76,24 +76,32 @@ function formatDate(date){
     //   console.log(formatDate(new Date())); //works
 
 function expandContent(){
-    const coll = document.getElementsByClassName("collapsible");
-    let index;
+    var acc = document.getElementsByClassName("accordion");
+var i;
 
-    for (index = 0; index < coll.length; index++) {
-    coll[index].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-        content.style.display = "none";
-        } else {
-        content.style.display = "block";
-        }
-    });
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
     }
+  });
+}
 };
 
 function toggleLike(like) {
     like.classList.toggle("fa-thumbs-up");
+  }
+
+function toggleAccordion(state) {
+    state.classList.toggle("fa fa-angle-up");
   }
   
 //refractor else clause 
@@ -106,7 +114,7 @@ function toggleLike(like) {
 
 
 function reloadBtn(){
-      console.log('Did this log on page load?')
+    //   console.log('Did this log on page load?') //works
       renderBtn.innerHTML +=
     `<button id="render-more">I want more <i class="fa fa-refresh" aria-hidden="true"></i>
     </button> `

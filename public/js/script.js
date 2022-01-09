@@ -37,7 +37,6 @@ for (let i = 0; i < nasaArray.length; i++) {
 // console.log("loop check"); //works
 
 //check to see media_type
-//     <img class="card-img-top" src="${cardData[i].url}" alt="${cardData[i].title}">
     imageCards.innerHTML +=     
     `<div class="col-lg-6 mb-6 mx-auto min-width">
     <div class="card">
@@ -118,8 +117,7 @@ function toggleAccordion(state) {
 function reloadBtn(){
     //   console.log('Did this log on page load?') //works
       renderBtn.innerHTML +=
-    `<button id="render-more">I want more <i class="fa fa-refresh" aria-hidden="true"></i>
-    </button> `
+    `<button id="render-more" class="button-reload" role="button"> I want more </button> `
 }
 
 

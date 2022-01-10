@@ -38,10 +38,10 @@ SO THAT I can like and unlike posts and learn more about how I can make commerce
 ## Acceptance Criteria
 ```
   WHEN I load the page then I am presented with four media (i.e., images and/or videos) from a NASA API, APOD
-  THEN I am able to see the title of the image, date of capture, and more content
-  WHEN I click the like button, I am able to like/unlike the image
-  WHEN I click the "I want more" button, four new images are rendered
-  WHEN I click on an image, I am taken to a new tab with the url of that image/video
+  THEN I am able to see the title of the media, date of capture, and more content
+  WHEN I click the like button, I am able to like/unlike the image/video
+  WHEN I click the "I want more" button, four new images and/or videos are rendered
+  WHEN I click on a media, I am taken to a new tab with the url of that image/video
   WHEN I hover over the "Welcome" text, my mouse turns into a star and I am able to click a hidden button
   WHEN I click the hidden button, then I presented with an about Laurel page
   THEN I am able to learn more about Laurel and why she would be a great addition to the Shopify team

@@ -96,9 +96,8 @@ This is a private project and is not taking contributors at this time.  Instead,
 
   <a name="picsection"></a>
   ## Screenshots
-  ![Screenshot of homepage](./public/media/screenshot2.png)
-  ![Screenshot of logging into blog](./public/media/screenshot1.png)
-  ![Screenshot of dashboard](./public/media/screenshot3.png)
+  ![Screenshot of main page](./public/media/fullscreen.png)
+  ![Screenshot of about Laurel](./public/media/aboutLaurel_fullshot.png)
 
   <a name="creditsection"></a>
 ## Resources/Credit

@@ -1,4 +1,4 @@
-# Rocketship-Challenge-2022 (Spacestagram: Image-sharing from the final frontier)
+# Spacestagram: Image-sharing from the final frontier 🚀
 
 <a name="descsection"></a>
 ## Description

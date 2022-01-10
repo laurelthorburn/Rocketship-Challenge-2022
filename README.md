@@ -3,14 +3,14 @@
 <a name="descsection"></a>
 ## Description
 
-The purpose of this project was to share photos from one of NASA's APIs and to help Shopify extend their mission to everyone in the universe.   This site was created using handlebars, bootstrap, font awesome, javascript, html, and css.  The user is able to like/unlike their favorite photos, render new images, and expand content in order to learn more about the images of their choosing.  When a user clicks the image or video, the media opens in a new tab. 
+The purpose of this project was to share photos from one of NASA's APIs and to support Shopify extend their mission of making commerce better to everyone in the universe.   This site was created using handlebars, bootstrap, font awesome, javascript, html, and css.  The user is able to like/unlike their favorite photos, render new images, and expand content in order to learn more about the images of their choosing.  
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   <a name="linksection"></a>
   ## Links
   
-  Deployed Heroku Site: git.heroku.com/rocketship-dreamer.git
+  Deployed Heroku Site: https://rocketship-dreamer.herokuapp.com/aboutLaurel
 
   Github Site: https://github.com/laurelthorburn/Rocketship-Challenge-2022
 
@@ -42,7 +42,7 @@ so that I can like and unlike posts and learn more about how I can make commerce
   WHEN I click the like button, I am able to like/unlike the image
   WHEN I click the "I want more" button, four new images are rendered
   WHEN I click on an image, I am taken to a new tab with the url of that image/video
-  WHEN I hover over the "Welcome" my mouse turns into a star and I am able to click a hidden button
+  WHEN I hover over the "Welcome" text, my mouse turns into a star and I am able to click a hidden button
   WHEN I click the hidden button, then I presented with an about Laurel page
   THEN I am able to learn more about Laurel and why she would be a great addition to the Shopify team
   

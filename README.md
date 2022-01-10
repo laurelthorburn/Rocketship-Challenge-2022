@@ -7,17 +7,24 @@ The purpose of this project was to share photos from one of NASA's APIs and to h
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+  <a name="linksection"></a>
+  ## Links
+  
+  Deployed Heroku Site: git.heroku.com/rocketship-dreamer.git
+
+  Github Site: https://github.com/laurelthorburn/Rocketship-Challenge-2022
+
 ## Table of Contents
 1. [ Description. ](#descsection)
-2. [ User Story. ](#usersection)
-3. [ Acceptance Criteria. ](#acceptancesection)
-4. [ Installation. ](#installsection)
-5. [ Usage. ](#usagesection)
-6. [ License. ](#licensesection)
-7. [ Contributing. ](#contribsection)
-8. [ Questions. ](#questionssection)
-9. [ Screenshots. ](#picsection)
-10. [ Links. ](#linksection)
+2. [ Links. ](#linksection)
+3. [ User Story. ](#usersection)
+4. [ Acceptance Criteria. ](#acceptancesection)
+5. [ Installation. ](#installsection)
+6. [ Usage. ](#usagesection)
+7. [ License. ](#licensesection)
+8. [ Contributing. ](#contribsection)
+9. [ Questions. ](#questionssection)
+10. [ Screenshots. ](#picsection)
 11. [ Resources/Credit. ](#creditsection)
 
 <a name="usersection"></a>
@@ -92,13 +99,6 @@ This is a private project and is not taking contributors at this time.  Instead,
   ![Screenshot of homepage](./public/media/screenshot2.png)
   ![Screenshot of logging into blog](./public/media/screenshot1.png)
   ![Screenshot of dashboard](./public/media/screenshot3.png)
-
-  <a name="linksection"></a>
-  ## Links
-  
-  Deployed Heroku Site: git.heroku.com/rocketship-dreamer.git
-
-  Github Site: https://github.com/laurelthorburn/Rocketship-Challenge-2022
 
   <a name="creditsection"></a>
 ## Resources/Credit

@@ -15,11 +15,10 @@ The purpose of this project was to share photos from one of NASA's APIs and to h
 5. [ Usage. ](#usagesection)
 6. [ License. ](#licensesection)
 7. [ Contributing. ](#contribsection)
-8. [ Tests. ](#testsection)
-9. [ Questions. ](#questionssection)
-10. [ Screenshots. ](#picsection)
-11. [ Links. ](#linksection)
-12. [ Resources/Credit. ](#creditsection)
+8. [ Questions. ](#questionssection)
+9. [ Screenshots. ](#picsection)
+10. [ Links. ](#linksection)
+11. [ Resources/Credit. ](#creditsection)
 
 <a name="usersection"></a>
 ## User Story
@@ -46,36 +45,23 @@ so that I can like and unlike posts and learn more about how I can make commerce
 ## Installation
 * Clone the repository using:
 ```
-git clone https://github.com/laurelthorburn/Workout-Tracker.git
+git clone https://github.com/laurelthorburn/Rocketship-Challenge-2022.git
 ```
 * Ensure you are in the current working directory
 * Open terminal in working directory and type:
 ```
 npm init
 ```
-* Install dependencies (bcrypt, connect-session-sequelize, dotenv, express, express-handlebars, express-session, mysql2, and sequelize) by opening the terminal (ctrl + j on windows) and running:
+* Install dependencies by opening the terminal (ctrl + j on windows) and running:
 ```
 npm install
-```
-OR each of the following:
-```
-npm install bcrypt || npm install connect-session-sequelize ||  npm install dotenv || npm install express || npm install express-handlebars || npm install express-session || npm install mysql2 || npm install sequelize
 ```
 
 <a name="usagesection"></a>
 ## Usage
-*  After following user installation guide above, open the database (db) folder in the integrated terminal and log onto mysql:
+*  After following user installation guide above, open root folder in the integrated terminal and type in the following:
 ```
-mysql -u root -p
-```
-* Enter mysql password and then SOURCE the schema file
-```
-SOURCE schema.sql
-```
-* Open root folder in the integrated terminal and type in the following order:
-```
-npm run seed
-npm run dev (only works if nodemon is installed)
+npm run start (only works if nodemon is installed)
 ```
 * Open your localhost:3001 
 * Enjoy!
@@ -93,24 +79,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   <a name="contribsection"></a>
 ## Contributing
   
-1. [Fork the repo!](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
-2. Create a feature branch:
-```
-git checkout -b yourname-branch
-```
-3. Commit changes:
-```
-git commit -m 'Your changes here'
-```
-4. Push to the branch:
-```
-git push origin yourname-branch
-```
-5. Submit a pull request and wait for it to be approved or denied.
-
-  <a name="testsection"></a>
-## Tests
-  No tests are available at this time.
+This is a private project and is not taking contributors at this time.  Instead, please leave an encouraging comment and cross your fingers that I get an interview!
 
   <a name="questionssection"></a>
 ## Questions?

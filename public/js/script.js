@@ -106,8 +106,10 @@ function toggleAccordion(state) {
 //refractor else clause 
   function checkMedia(type, url, title){
       if (type !== 'image'){
-          return `<img class="card-img-top" src="./media/youtube_play.png" alt="${title}"></img>`
-      }
+          return `<iframe id="ytplayer" type="text/html" width="560" height="340"
+          src="${url}?autoplay=0&origin=http://example.com"
+          frameborder="0"></iframe>`
+                }
         return `<img class="card-img-top" src="${url}" alt="${title}"></img>`
   }
 

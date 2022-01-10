@@ -102,4 +102,12 @@ This is a private project and is not taking contributors at this time.  Instead,
 
   <a name="creditsection"></a>
 ## Resources/Credit
-* 
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString
+* https://stackoverflow.com/questions/5223/length-of-a-javascript-object
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames
+* https://www.w3schools.com/howto/howto_js_toggle_like.asp
+* https://www.w3schools.com/howto/howto_js_accordion.asp
+* https://pixabay.com/vectors/youtube-logo-graphic-red-1837872/
+* https://www.youtube.com/watch?v=xuA83OYTE7I
+
+

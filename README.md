@@ -3,7 +3,7 @@
 <a name="descsection"></a>
 ## Description
 
-The purpose of this project was to share photos from one of NASA's APIs and to support Shopify extend their mission of making commerce better to everyone in the universe.   This site was created using handlebars, bootstrap, font awesome, javascript, html, and css.  The user is able to like/unlike their favorite photos, render new images, and expand content in order to learn more about the images of their choosing.  
+The purpose of this project was to share photos from one of NASA's APIs (APOD: Astronomy Picture of the Day) and to support Shopify extend their mission of "Making Commerce Better" for everyone in the universe.   This site was created using Handlebars, Bootstrap, Font Awesome, JavaScript, HTML, and CSS.  The user is able to like/unlike their favorite photos, render new media, and expand content in order to learn more about the media of their choosing.  
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -30,14 +30,14 @@ The purpose of this project was to share photos from one of NASA's APIs and to s
 <a name="usersection"></a>
 ## User Story
 ```
-AS A USER, I want to be able to view photos from one of NASA's image APIs
-so that I can like and unlike posts and learn more about how I can make commerce better for the entire universe
+AS A USER, I want to be able to view media from one of NASA's APIs
+SO THAT I can like and unlike posts and learn more about how I can make commerce better for everyone
 ```
 
 <a name="acceptancesection"></a>
 ## Acceptance Criteria
 ```
-  WHEN I load the page then I am presented with four images from a NASA API
+  WHEN I load the page then I am presented with four media (i.e., images and/or videos) from a NASA API, APOD
   THEN I am able to see the title of the image, date of capture, and more content
   WHEN I click the like button, I am able to like/unlike the image
   WHEN I click the "I want more" button, four new images are rendered
@@ -101,6 +101,8 @@ This is a private project and is not taking contributors at this time.  Instead,
 
   <a name="creditsection"></a>
 ## Resources/Credit
+* https://api.nasa.gov/
+* https://github.com/nasa/apod-api
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString
 * https://stackoverflow.com/questions/5223/length-of-a-javascript-object
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames
@@ -108,5 +110,6 @@ This is a private project and is not taking contributors at this time.  Instead,
 * https://www.w3schools.com/howto/howto_js_accordion.asp
 * https://pixabay.com/vectors/youtube-logo-graphic-red-1837872/
 * https://www.youtube.com/watch?v=xuA83OYTE7I
+* https://developers.google.com/youtube/player_parameters
 
 

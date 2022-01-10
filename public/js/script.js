@@ -107,7 +107,7 @@ function toggleAccordion(state) {
   function checkMedia(type, url, title){
       if (type !== 'image'){
           return `<iframe id="ytplayer" type="text/html" width="560" height="340"
-          src="${url}?autoplay=0&origin=http://example.com"
+          src="${url}?autoplay=0&origin=http://youtube.com"
           frameborder="0"></iframe>`
                 }
         return `<img class="card-img-top" src="${url}" alt="${title}"></img>`

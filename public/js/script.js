@@ -1,4 +1,5 @@
-console.log("Support Laurel launch her dream career... 🚀");
+console.log("Support Laurel launch her dream career... 🚀",
+"Don't forget to click the 'Welcome' text for a hidden treat");
 
 const baseURL = `https://api.nasa.gov/planetary/apod?api_key=IIynkiUi3iVEppyNc1Q0pAEfUURrR0FGy9T7OGaE&count=4`;
 const imageCards = document.querySelector('[data-nasa-card]');
@@ -24,8 +25,8 @@ function getNASA(){
 
 //rendering cards on page
 function displayNasaCards(cardData){
-console.log("Test 2",
-cardData) //works
+// console.log("Test 2",
+// cardData) //works
 
 // console.log(cardData.length) //undefined
 const nasaArray = Object.getOwnPropertyNames(cardData);

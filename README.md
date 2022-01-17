@@ -10,7 +10,7 @@ The purpose of this project was to share photos from one of NASA's APIs (APOD: A
   <a name="linksection"></a>
   ## Links
   
-  Deployed Heroku Site: https://rocketship-dreamer.herokuapp.com/aboutLaurel
+  Deployed Heroku Site: https://rocketship-dreamer.herokuapp.com/
 
   Github Site: https://github.com/laurelthorburn/Rocketship-Challenge-2022
 
